@@ -11,15 +11,15 @@ from bs4 import BeautifulSoup
 pip.main(['install', 'pytelegrambotapi', 'beautifulsoup4', 'requests'])
 
 # Замените на ваш токен Telegram и ID канала
-TELEGRAM_TOKEN = ''
-CHANNEL_ID = ''
-SUBSCRIPTION_LINK = ''
+TELEGRAM_TOKEN = '8165234385:AAELS2kZmZUgk5r4F8GHeJT5jbsE3LASjic'
+CHANNEL_ID = '@GlobalNewsPulse'
+SUBSCRIPTION_LINK = 'https://t.me/+7E9osI2t45k0NWMy'
 
 # Множество для хранения идентификаторов отправленных новостей
 sent_news_ids = set()
 
 async def fetch_latest_news():
-    rss_url = ''
+    rss_url = 'https://www.dailymail.co.uk/articles.rss'
     feed = feedparser.parse(rss_url)
 
     # Получаем первую новость
