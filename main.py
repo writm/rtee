@@ -1,7 +1,6 @@
 import feedparser
 import asyncio
 from telegram.ext import ApplicationBuilder
-from background import keep_alive
 import threading
 import pip
 import requests
@@ -79,6 +78,4 @@ async def main():
         await asyncio.sleep(1800)  # Задержка в 60 секунд
 
 if __name__ == '__main__':
-    # Запускаем Flask сервер в отдельном потоке
-    threading.Thread(target=keep_alive).start()
     asyncio.run(main())
