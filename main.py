@@ -56,7 +56,7 @@ async def run_bot():
 async def main():
     while True:
         await run_bot()
-        await asyncio.sleep(1800)  # 30 minutes
+        await asyncio.sleep(1700)  # 30 minutes
 
 if __name__ == '__main__':
     asyncio.run(main())
